@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Planets Data</title>
+<style>
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border: 1px solid black;
+    }
+    caption {
+        caption-side: top;
+        font-style: italic;
+    }
+    .planet-header {
+        border-right: 2px solid black; /* Adding black border to the column with planet names */
+    }
+</style>
+</head>
+<body>
+
+<table>
+    <caption>Planets Data</caption>
+    <thead>
+        <tr>
+            <th scope="col">Planet Name</th>
+            <th scope="col">Diameter (km)</th>
+            <th scope="col">Mass (x10^24 kg)</th>
+            <th scope="col">Moons</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row" class="planet-header">Mercury</th>
+            <td>4,880</td>
+            <td>0.330</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th scope="row" class="planet-header">Venus</th>
+            <td>12,104</td>
+            <td>4.87</td>
+            <td>0</td>
+        </tr>
+        <tr>
+            <th scope="row" class="planet-header">Earth</th>
+            <td>12,742</td>
+            <td>5.97</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <th scope="row" class="planet-header">Mars</th>
+            <td>6,779</td>
+            <td>0.642</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <th scope="row" class="planet-header">Jupiter</th>
+            <td>139,820</td>
+            <td>1,898</td>
+            <td>79</td>
+        </tr>
+        <tr>
+            <th scope="row" class="planet-header">Saturn</th>
+            <td>116,460</td>
+            <td>568</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <th scope="row" class="planet-header">Uranus</th>
+            <td>50,724</td>
+            <td>86.8</td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <th scope="row" class="planet-header">Neptune</th>
+            <td>49,244</td>
+            <td>102</td>
+            <td>14</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
