@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('your-background-image.jpg'); /* Replace with your actual background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.odin-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.odin-logo h1 {
+    color: white;
+    font-size: 3em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for content */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #E5E7EB; /* Light border for inputs */
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+}
+
+input[type="password"]:invalid {
+    border-color: red; /* Red border for invalid password */
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #4A90E2; /* Blue border for focused input */
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.5); /* Subtle box shadow */
+}
+
+button {
+    background-color: #596D48; /* Create Account button color */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #405630; /* Darker shade for hover effect */
+}

@@ -1,0 +1,34 @@
+/*
+ cm	Centimeters	1cm = 37.8px = 25.2/64in
+mm	Millimeters	1mm = 1/10th of 1cm
+Q	Quarter-millimeters	1Q = 1/40th of 1cm
+in	Inches	1in = 2.54cm = 96px
+pc	Picas	1pc = 1/6th of 1in
+pt	Points	1pt = 1/72nd of 1in
+px	Pixels	1px = 1/96th of 1in */
+
+
+<p style="line-height: 2em">
+  Summer is a time for adventure, and this year was no exception. I had many
+  exciting experiences, but two of my favorites were my trip to the beach and my
+  week at summer camp.
+</p>
+
+<p style="line-height: 4em">
+  At the beach, I spent my days swimming, collecting shells, and building
+  sandcastles. I also went on a boat ride and saw dolphins swimming alongside
+  us.
+</p>
+
+
+/* css for it  */
+
+p {
+    margin: 0;
+    background-image: repeating-linear-gradient(
+      to top,
+      lightskyblue 0 2px,
+      transparent 2px 1lh
+    );
+  }
+  

@@ -1,0 +1,26 @@
+.error-modal {
+    --color-error-text: red;
+    /* (color-error-text wouldn’t be the same as Color-Error-Text */
+    --modal-border: 1px solid black;
+    --modal-font-size: calc(2rem + 5vw);
+
+  /* var() function actually accepts two parameters */
+    color: var(--color-error-text);
+    border: var(--modal-border);
+    font-size: var(--modal-font-size);
+  }
+
+
+  :root {
+    --main-color: red;
+  }
+  
+  .cool-paragraph {
+    color: var(--main-color);
+  }
+  
+  .exciting-paragraph {
+    background-color: var(--main-color);
+  }
+  /* :root selector
+   can access it on any other valid selector within our CSS file*/
