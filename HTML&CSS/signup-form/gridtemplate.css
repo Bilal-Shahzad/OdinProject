@@ -1,0 +1,75 @@
+.container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+  }
+  
+  .item {
+    background-color: orange;
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+  /* .first-row class selector to see the grid track between the first and second-row grid lines */
+  .first-row {
+  /*   background-color: pink; */
+  }
+
+  /* .last-column class selector to see the grid track between the third and fourth-column grid lines */
+  .last-column {
+  /*   background-color: lightblue; */
+  }
+
+
+
+  .container {
+    /* display: inline-grid here so that our container does not stretch to take up space the way a block-level box would */
+    display: inline-grid;
+    grid-template: 40px 40px 40px 40px 40px / 40px 40px 40px 40px 40px;
+    background-color: lightblue;
+  }
+  .room {
+    border: 1px solid;
+    font-size: 50%;
+    text-align: center;
+  }
+  
+  #living-room {
+    /*  positioned this items using grid-column-start and grid-column-end */
+    grid-column-start: 1;
+    grid-column-end: 6;
+  /*   grid-row-start: 1;
+    grid-row-end: 3; */
+  }
+  #kitchen {
+    /* grid-column is just a combination of grid-column-start and grid-column-end with a slash between the two values. And grid-row is the shorthand version for setting an item’s row positioning. */
+    grid-column: 4 / 6;
+    grid-row: 3 / 6;
+  }
+  
+  #bedroom {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 5;
+  }
+  
+  #bathroom {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+  
+  #closet {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 5;
+    grid-row-end: 6;
+  }
+
+
+#living-room {
+    /* Instead of using the grid lines to position all the items in a grid, we can create a visual layout of the grid in words using grid-area */
+    grid-area: 1 / 1 / 3 / 6;
+  }
